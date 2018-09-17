@@ -6,6 +6,6 @@ module.exports = function(source, map) {
     description: packageJSON.description,
     version: packageJSON.version
   };
-  const output = moduleExports.concat(JSON.stringify(about));
+  const output = JSON.stringify(about);
   this.callback(null, output, map);
 };
